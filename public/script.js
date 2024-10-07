@@ -23,7 +23,7 @@ document.getElementById('inputForm').addEventListener('submit', function (event)
             let resultMessage = '';
             times.forEach((item, index) => {
                 const status = item.found ? 'found' : 'not found';
-                resultMessage += `In array of size ${item.size}, element ${searchElement} was ${status}.<br>`;
+                resultMessage += `In array of size ${item.size}, element ${searchElement} was ${status}. (${item.timeTaken} ms) <br>`;
             });
             
             document.getElementById('result').innerHTML = resultMessage;

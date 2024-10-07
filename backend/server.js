@@ -44,5 +44,7 @@ app.get('/search', (req, res) => {
     res.json({ searchElement, times });
 });
 
+app.listen(3000, () => console.log("Server ready on port 3000."));
+
 // Export the app for Vercel
 module.exports = app;
